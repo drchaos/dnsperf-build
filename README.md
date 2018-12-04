@@ -1,6 +1,11 @@
 # Nix package for dnsperf
 
- Please run to build
+# Build
 ```
 nix-build -A dnsperf release.nix
+```
+
+# Run
+```
+./result/bin/dnsperf -h
 ```

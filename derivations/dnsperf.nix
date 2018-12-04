@@ -5,7 +5,6 @@ stdenv.mkDerivation {
   nativeBuildInputs = [ autoreconfHook pkgconfig ];
   buildEnv = [openssl];
   buildInputs = [ openssl bind libcap libkrb5 libxml2 geoip ];
-  #src = ../../dnsperf-tcpc;
   src = fetchgit {
     url = https://github.com/drchaos/dnsperf-tcp;
     rev = "39d704daf8fe8a2c152988ecf5b65cebdfa3a01a";
